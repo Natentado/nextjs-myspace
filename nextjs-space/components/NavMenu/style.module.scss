@@ -1,0 +1,40 @@
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 24px;
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+
+    .links{
+        display: flex;
+        margin-right: 18px;
+    }
+    
+    li{
+        display: flex;
+        align-items: center;
+        height: 70px;
+        list-style: none;
+
+        a{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 24px;
+            font-size: 18px;
+            text-decoration: none;
+            
+            &:hover:not(.signBtnContainer a){
+                background-color: #043bd6;
+                text-decoration: underline;
+            }
+
+            &:active:not(.signBtnContainer a){
+                background-color: #0436c4;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.signOutBtn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .userAvatar{
+        width: fit-content;
+        padding: unset;
+        border: 3px solid transparent;
+        border-radius: 50%;
+
+        img{
+            border-radius: 50%;
+            transition: all 0.2s linear;
+        }
+
+        &:hover img{
+            scale: 1.2;
+        }
+    }
+};
+
+.buttonComponent{
+    cursor: pointer;
+    min-width: 100px;
+    height: 42px;
+    padding: 0 18px;
+    border: 1px solid darkblue;
+    border-radius: 6px;
+    color: darkblue;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover{
+        opacity: 0.9;
+    }
+
+    &:active{
+        opacity: 0.8;
+    }
+}
