@@ -7,10 +7,10 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 
 export const SignInButton = () => {
     const { data: session, status } = useSession();
-    console.log(session, status)
+
     if(status === "loading"){
         return (
-            <span style={{minWidth: "158.66px"}} />
+            <span style={{minWidth: "100px"}} />
         );
     };
 
