@@ -12,18 +12,20 @@ const UserProfile = async ({params}: UserProfileProps) => {
     const {name, bio, image} = user ?? {};
 
     return (
-        <div>
-            <h1>{name}</h1>
+        <main>
+            <div>
+                <h1>{name}</h1>
 
-            <img
-                width={300}
-                src={image ?? '/mememan.webp'}
-                alt={`${name}'s profile`}
-            />
+                <img
+                    width={300}
+                    src={image ?? '/mememan.webp'}
+                    alt={`${name}'s profile`}
+                    />
 
-            <h3>Bio</h3>
-            <p>{bio}</p>
-        </div>
+                <h3>Bio</h3>
+                <p>{bio}</p>
+            </div>
+        </main>
     )
 };
 
