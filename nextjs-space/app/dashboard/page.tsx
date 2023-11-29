@@ -13,7 +13,7 @@ const Dashboard = async () => {
     };
 
     const currentUserEmail = session.user?.email!;
-    const user = prisma.user.findUnique({where: {email: currentUserEmail}});
+    const user = prisma.user.findUnique({where: {email: "itsjustnatemolina@gmail.com"}});
 
     return (
         <main>

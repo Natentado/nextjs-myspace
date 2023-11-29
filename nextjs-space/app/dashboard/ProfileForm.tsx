@@ -23,7 +23,7 @@ const ProfileForm = ({user}: any) => {
             }
         });
 
-        await res.json();
+        // return await res.json();
     };
 
     return (

@@ -20,7 +20,7 @@ const UserProfile = async ({params}: UserProfileProps) => {
                     width={300}
                     src={image ?? '/mememan.webp'}
                     alt={`${name}'s profile`}
-                    />
+                />
 
                 <h3>Bio</h3>
                 <p>{bio}</p>
